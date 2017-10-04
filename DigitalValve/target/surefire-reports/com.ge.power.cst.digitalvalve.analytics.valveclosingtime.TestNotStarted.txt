@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ge.power.cst.digitalvalve.analytics.valveclosingtime.TestNotStarted
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.228 sec - in com.ge.power.cst.digitalvalve.analytics.valveclosingtime.TestNotStarted

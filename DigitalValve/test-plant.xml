@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plant>
+    <name>PLANT Number - 1</name>
+    <description>Description plant</description>
+    <block>
+        <name>BLOCK - 1</name>
+        <description>Description block - 1</description>
+        <unit id="GT1">
+            <name>Gas Turbine 1</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="GT2">
+            <name>Gas Turbine 2</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="ST1">
+            <name>Steam Turbine 1</name>
+            <frameSize>ST_D14</frameSize>
+            <unitType>ST</unitType>
+            <system>
+                <name>HP System</name>
+                <description>Description - HP System</description>
+                <type>ST_HP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_HP_HP</type>
+                    <device>
+                        <name>MSCV #1</name>
+                        <description>Description - MSCV #1</description>
+                        <type>MSCV</type>
+                        <valve id="ST1_ST_HP_HP_MSCV1_CV">
+                            <name>MSCV #1 CV</name>
+                            <description>Description - MSCV #1 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST1_ST_HP_HP_MSCV1_MSV">
+                            <name>MSCV #1 MSV</name>
+                            <description>Description - MSCV #1 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>MSCV #2</name>
+                        <description>Description - MSCV #2</description>
+                        <type>MSCV</type>
+                        <valve id="ST1_ST_HP_HP_MSCV2_CV">
+                            <name>MSCV #2 CV</name>
+                            <description>Description - MSCV #2 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST1_ST_HP_HP_MSCV2_MSV">
+                            <name>MSCV #2 MSV</name>
+                            <description>Description - MSCV #2 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>IP System</name>
+                <description>Description - IP System</description>
+                <type>ST_IP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_IP_IP</type>
+                    <device>
+                        <name>CRV #1</name>
+                        <description>Description - CRV #1</description>
+                        <type>CRV</type>
+                        <valve id="ST1_ST_IP_IP_CRV1_IV">
+                            <name>CRV #1 IV</name>
+                            <description>Description - CRV #1 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST1_ST_IP_IP_CRV1_RSV">
+                            <name>CRV #1 RSV</name>
+                            <description>Description - CRV #1 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>CRV #2</name>
+                        <description>Description - CRV #2</description>
+                        <type>CRV</type>
+                        <valve id="ST1_ST_IP_IP_CRV2_IV">
+                            <name>CRV #2 IV</name>
+                            <description>Description - CRV #2 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST1_ST_IP_IP_CRV2_RSV">
+                            <name>CRV #2 RSV</name>
+                            <description>Description - CRV #2 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>LP System</name>
+                <description>Description - LP System</description>
+                <type>ST_LP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_LP_LP</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+    </block>
+    <block>
+        <name>BLOCK - 2</name>
+        <description>Description block - 2</description>
+        <unit id="GT3">
+            <name>Gas Turbine 3</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="GT4">
+            <name>Gas Turbine 4</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="ST2">
+            <name>Steam Turbine 2</name>
+            <frameSize>ST_D14</frameSize>
+            <unitType>ST</unitType>
+            <system>
+                <name>HP System</name>
+                <description>Description - HP System</description>
+                <type>ST_HP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_HP_HP</type>
+                    <device>
+                        <name>MSCV #1</name>
+                        <description>Description - MSCV #1</description>
+                        <type>MSCV</type>
+                        <valve id="ST2_ST_HP_HP_MSCV1_CV">
+                            <name>MSCV #1 CV</name>
+                            <description>Description - MSCV #1 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST2_ST_HP_HP_MSCV1_MSV">
+                            <name>MSCV #1 MSV</name>
+                            <description>Description - MSCV #1 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>MSCV #2</name>
+                        <description>Description - MSCV #2</description>
+                        <type>MSCV</type>
+                        <valve id="ST2_ST_HP_HP_MSCV2_CV">
+                            <name>MSCV #2 CV</name>
+                            <description>Description - MSCV #2 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST2_ST_HP_HP_MSCV2_MSV">
+                            <name>MSCV #2 MSV</name>
+                            <description>Description - MSCV #2 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>IP System</name>
+                <description>Description - IP System</description>
+                <type>ST_IP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_IP_IP</type>
+                    <device>
+                        <name>CRV #1</name>
+                        <description>Description - CRV #1</description>
+                        <type>CRV</type>
+                        <valve id="ST2_ST_IP_IP_CRV1_IV">
+                            <name>CRV #1 IV</name>
+                            <description>Description - CRV #1 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST2_ST_IP_IP_CRV1_RSV">
+                            <name>CRV #1 RSV</name>
+                            <description>Description - CRV #1 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>CRV #2</name>
+                        <description>Description - CRV #2</description>
+                        <type>CRV</type>
+                        <valve id="ST2_ST_IP_IP_CRV2_IV">
+                            <name>CRV #2 IV</name>
+                            <description>Description - CRV #2 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST2_ST_IP_IP_CRV2_RSV">
+                            <name>CRV #2 RSV</name>
+                            <description>Description - CRV #2 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>LP System</name>
+                <description>Description - LP System</description>
+                <type>ST_LP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_LP_LP</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+    </block>
+    <block>
+        <name>BLOCK - 3</name>
+        <description>Description block - 3</description>
+        <unit id="GT5">
+            <name>Gas Turbine 5</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="GT6">
+            <name>Gas Turbine 6</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="ST3">
+            <name>Steam Turbine 3</name>
+            <frameSize>ST_D14</frameSize>
+            <unitType>ST</unitType>
+            <system>
+                <name>HP System</name>
+                <description>Description - HP System</description>
+                <type>ST_HP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_HP_HP</type>
+                    <device>
+                        <name>MSCV #1</name>
+                        <description>Description - MSCV #1</description>
+                        <type>MSCV</type>
+                        <valve id="ST3_ST_HP_HP_MSCV1_CV">
+                            <name>MSCV #1 CV</name>
+                            <description>Description - MSCV #1 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST3_ST_HP_HP_MSCV1_MSV">
+                            <name>MSCV #1 MSV</name>
+                            <description>Description - MSCV #1 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>MSCV #2</name>
+                        <description>Description - MSCV #2</description>
+                        <type>MSCV</type>
+                        <valve id="ST3_ST_HP_HP_MSCV2_CV">
+                            <name>MSCV #2 CV</name>
+                            <description>Description - MSCV #2 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST3_ST_HP_HP_MSCV2_MSV">
+                            <name>MSCV #2 MSV</name>
+                            <description>Description - MSCV #2 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>IP System</name>
+                <description>Description - IP System</description>
+                <type>ST_IP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_IP_IP</type>
+                    <device>
+                        <name>CRV #1</name>
+                        <description>Description - CRV #1</description>
+                        <type>CRV</type>
+                        <valve id="ST3_ST_IP_IP_CRV1_IV">
+                            <name>CRV #1 IV</name>
+                            <description>Description - CRV #1 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST3_ST_IP_IP_CRV1_RSV">
+                            <name>CRV #1 RSV</name>
+                            <description>Description - CRV #1 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>CRV #2</name>
+                        <description>Description - CRV #2</description>
+                        <type>CRV</type>
+                        <valve id="ST3_ST_IP_IP_CRV2_IV">
+                            <name>CRV #2 IV</name>
+                            <description>Description - CRV #2 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST3_ST_IP_IP_CRV2_RSV">
+                            <name>CRV #2 RSV</name>
+                            <description>Description - CRV #2 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>LP System</name>
+                <description>Description - LP System</description>
+                <type>ST_LP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_LP_LP</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+    </block>
+    <block>
+        <name>BLOCK - 4</name>
+        <description>Description block - 4</description>
+        <unit id="GT7">
+            <name>Gas Turbine 7</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="GT8">
+            <name>Gas Turbine 8</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="ST4">
+            <name>Steam Turbine 4</name>
+            <frameSize>ST_D14</frameSize>
+            <unitType>ST</unitType>
+            <system>
+                <name>HP System</name>
+                <description>Description - HP System</description>
+                <type>ST_HP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_HP_HP</type>
+                    <device>
+                        <name>MSCV #1</name>
+                        <description>Description - MSCV #1</description>
+                        <type>MSCV</type>
+                        <valve id="ST4_ST_HP_HP_MSCV1_CV">
+                            <name>MSCV #1 CV</name>
+                            <description>Description - MSCV #1 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST4_ST_HP_HP_MSCV1_MSV">
+                            <name>MSCV #1 MSV</name>
+                            <description>Description - MSCV #1 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>MSCV #2</name>
+                        <description>Description - MSCV #2</description>
+                        <type>MSCV</type>
+                        <valve id="ST4_ST_HP_HP_MSCV2_CV">
+                            <name>MSCV #2 CV</name>
+                            <description>Description - MSCV #2 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST4_ST_HP_HP_MSCV2_MSV">
+                            <name>MSCV #2 MSV</name>
+                            <description>Description - MSCV #2 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>IP System</name>
+                <description>Description - IP System</description>
+                <type>ST_IP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_IP_IP</type>
+                    <device>
+                        <name>CRV #1</name>
+                        <description>Description - CRV #1</description>
+                        <type>CRV</type>
+                        <valve id="ST4_ST_IP_IP_CRV1_IV">
+                            <name>CRV #1 IV</name>
+                            <description>Description - CRV #1 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST4_ST_IP_IP_CRV1_RSV">
+                            <name>CRV #1 RSV</name>
+                            <description>Description - CRV #1 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>CRV #2</name>
+                        <description>Description - CRV #2</description>
+                        <type>CRV</type>
+                        <valve id="ST4_ST_IP_IP_CRV2_IV">
+                            <name>CRV #2 IV</name>
+                            <description>Description - CRV #2 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST4_ST_IP_IP_CRV2_RSV">
+                            <name>CRV #2 RSV</name>
+                            <description>Description - CRV #2 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>LP System</name>
+                <description>Description - LP System</description>
+                <type>ST_LP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_LP_LP</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+    </block>
+    <block>
+        <name>BLOCK - 5</name>
+        <description>Description block - 5</description>
+        <unit id="GT9">
+            <name>Gas Turbine 9</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="GT10">
+            <name>Gas Turbine 10</name>
+            <frameSize>GT_7F_05</frameSize>
+            <unitType>GT</unitType>
+            <system>
+                <name>Compressor Systems</name>
+                <description>Description - Compressor Systems</description>
+                <type>GT_CS</type>
+                <subSystem>
+                    <name>Guided Vanes</name>
+                    <description>Description - Guided Vanes</description>
+                    <type>GT_CS_GV</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>Fuel System</name>
+                <description>Description - Fuel System</description>
+                <type>GT_FS</type>
+                <subSystem>
+                    <name>Gas Fuel</name>
+                    <description>Description - Gas Fuel</description>
+                    <type>GT_FS_GF</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+        <unit id="ST5">
+            <name>Steam Turbine 5</name>
+            <frameSize>ST_D14</frameSize>
+            <unitType>ST</unitType>
+            <system>
+                <name>HP System</name>
+                <description>Description - HP System</description>
+                <type>ST_HP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_HP_HP</type>
+                    <device>
+                        <name>MSCV #1</name>
+                        <description>Description - MSCV #1</description>
+                        <type>MSCV</type>
+                        <valve id="ST5_ST_HP_HP_MSCV1_CV">
+                            <name>MSCV #1 CV</name>
+                            <description>Description - MSCV #1 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST5_ST_HP_HP_MSCV1_MSV">
+                            <name>MSCV #1 MSV</name>
+                            <description>Description - MSCV #1 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>MSCV #2</name>
+                        <description>Description - MSCV #2</description>
+                        <type>MSCV</type>
+                        <valve id="ST5_ST_HP_HP_MSCV2_CV">
+                            <name>MSCV #2 CV</name>
+                            <description>Description - MSCV #2 CV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST5_ST_HP_HP_MSCV2_MSV">
+                            <name>MSCV #2 MSV</name>
+                            <description>Description - MSCV #2 MSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>IP System</name>
+                <description>Description - IP System</description>
+                <type>ST_IP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_IP_IP</type>
+                    <device>
+                        <name>CRV #1</name>
+                        <description>Description - CRV #1</description>
+                        <type>CRV</type>
+                        <valve id="ST5_ST_IP_IP_CRV1_IV">
+                            <name>CRV #1 IV</name>
+                            <description>Description - CRV #1 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST5_ST_IP_IP_CRV1_RSV">
+                            <name>CRV #1 RSV</name>
+                            <description>Description - CRV #1 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                    <device>
+                        <name>CRV #2</name>
+                        <description>Description - CRV #2</description>
+                        <type>CRV</type>
+                        <valve id="ST5_ST_IP_IP_CRV2_IV">
+                            <name>CRV #2 IV</name>
+                            <description>Description - CRV #2 IV</description>
+                            <controlValve>true</controlValve>
+                        </valve>
+                        <valve id="ST5_ST_IP_IP_CRV2_RSV">
+                            <name>CRV #2 RSV</name>
+                            <description>Description - CRV #2 RSV</description>
+                            <controlValve>false</controlValve>
+                        </valve>
+                    </device>
+                </subSystem>
+            </system>
+            <system>
+                <name>LP System</name>
+                <description>Description - LP System</description>
+                <type>ST_LP</type>
+                <subSystem>
+                    <name></name>
+                    <description>Description - </description>
+                    <type>ST_LP_LP</type>
+                    <device>
+                        <name></name>
+                        <description>Description - </description>
+                        <type>UNKNOWN</type>
+                    </device>
+                </subSystem>
+            </system>
+        </unit>
+    </block>
+</plant>

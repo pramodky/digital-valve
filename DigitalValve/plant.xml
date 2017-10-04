@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plant>
+	<name>Customer</name>
+	<description>Plant description</description>
+	<block id="BLOCK_1">
+		<name>209F</name>
+		<description>2 9F GTs + 2 HRSGs + 1 ST</description>
+		<unit id="ST1">
+			<name>Steam Turbine 1</name>
+			<frameSize>ST_D14</frameSize>
+			<unitType>ST</unitType>
+			<system id="HP1">
+				<name>HP System</name>
+				<description>ST1 HP System</description>
+				<subSystem id="HP1">
+					<name></name>
+					<description>ST1 HP Subsystem</description>
+					<actuatorSet id="MSCV1">
+						<name>MSCV #1</name>
+						<description>MSCV 1</description>
+						<type>MSCV</type>
+						<controlValve id="HP1_CV1">
+							<name>CV1</name>
+							<description>Main Steam Control Valve</description>
+						</controlValve>
+						<stopValve id="HP1_MSV1">
+							<name>MSV1</name>
+							<description>Main Steam Stop Valve</description>
+						</stopValve>
+					</actuatorSet>
+				</subSystem>
+			</system>
+			<system id="IP1">
+				<name>IP System</name>
+				<description>ST1 IP System</description>
+				<subSystem id="IP1">
+					<name></name>
+					<description>ST1 IP Subsystem</description>
+					<actuatorSet id="CRV1">
+						<name>CRV #1</name>
+						<description>CRV 1</description>
+						<type>CRV</type>
+						<controlValve id="IP1_IV1">
+							<name>IV1</name>
+							<description>Intercept Control Valve 1</description>
+						</controlValve>
+						<stopValve id="IP1_RSV1">
+							<name>RSV1</name>
+							<description>Reheat Stop Valve 1</description>
+						</stopValve>
+					</actuatorSet>
+				</subSystem>
+			</system>
+			<system id="LP1">
+				<name>LP System</name>
+				<description>ST1 LP System</description>
+				<subSystem id="LP1">
+					<name></name>
+					<description>ST1 LP Subsystem</description>
+				</subSystem>
+			</system>
+		</unit>
+		<unit id="GT1">
+			<name>Gas Turbine 1</name>
+			<frameSize>GT_7F_05</frameSize>
+			<unitType>GT</unitType>
+		</unit>
+	</block>
+</plant>

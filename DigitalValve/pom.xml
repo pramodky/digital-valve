@@ -1,0 +1,202 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<name>Digital Valve Application</name>
+
+	<artifactId>DigitalValve</artifactId>
+	<version>2.0.0</version>
+
+	<packaging>bundle</packaging>
+
+
+	<properties>
+		<!-- Maven Build Properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source.version>1.7</maven.compiler.source.version>
+		<maven.compiler.target.version>1.7</maven.compiler.target.version>
+		<clover.bundle.import />
+		<maven.archetype.archetype-packaging.version>2.2</maven.archetype.archetype-packaging.version>
+		<maven.plugins.maven-compiler-plugin.version>3.3</maven.plugins.maven-compiler-plugin.version>
+		<maven.plugins.maven-assembly-plugin.version>2.4</maven.plugins.maven-assembly-plugin.version>
+		<maven.plugins.maven-release-plugin.version>2.5.2</maven.plugins.maven-release-plugin.version>
+		<maven.plugins.maven-jarsigner-plugin.version>1.4</maven.plugins.maven-jarsigner-plugin.version>
+		<maven.plugins.maven-javadoc-plugin.version>2.10.3</maven.plugins.maven-javadoc-plugin.version>
+		<maven.plugins.maven-archetype-plugin.version>2.4</maven.plugins.maven-archetype-plugin.version>
+		<maven.plugins.maven-resources-plugin.version>2.7</maven.plugins.maven-resources-plugin.version>
+		<org.apache.felix.maven-bundle-plugin.version>2.5.4</org.apache.felix.maven-bundle-plugin.version>
+
+		<!-- 3rd Party Compile-Dependency Bundle versions -->
+		<org.osgi.core.version>5.0.0</org.osgi.core.version>
+		<org.osgi.compendium.version>5.0.0</org.osgi.compendium.version>
+		<org.slf4j.version>1.7.12</org.slf4j.version>
+		<biz.aQute.bnd.bndlib.version>2.4.0</biz.aQute.bnd.bndlib.version>
+		<clover.bundle.import></clover.bundle.import>
+
+		<!-- Predix Machine-Dependency Bundle versions -->
+		<dspmicro.version>16.4.4</dspmicro.version>
+		<dspmicro.device-common.project.version>16.4.4</dspmicro.device-common.project.version>
+
+		<!-- 3rd Party package versions -->
+		<import.org.osgi.service.component>"[1.2,2)"</import.org.osgi.service.component>
+		<import.org.osgi.service.cm>"[1.5,2)"</import.org.osgi.service.cm>
+		<import.org.slf4j>"[1.7,2)"</import.org.slf4j>
+
+		<!-- Predix Machine package versions -->
+		<import.com.ge.dspmicro.machinegateway.api>"[1.3,2.0)"</import.com.ge.dspmicro.machinegateway.api>
+	</properties>
+
+	<dependencies>
+
+		<!-- OSGi -->
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<version>${org.osgi.core.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.compendium</artifactId>
+			<version>${org.osgi.compendium.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${org.slf4j.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Predix Machine -->
+		<dependency>
+			<groupId>com.ge.dspmicro</groupId>
+			<artifactId>machinegateway-api</artifactId>
+			<version>${dspmicro.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ge.dspmicro</groupId>
+			<artifactId>device-common</artifactId>
+			<version>${dspmicro.device-common.project.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- DS Annotation Dependency -->
+		<dependency>
+			<groupId>biz.aQute.bnd</groupId>
+			<artifactId>bndlib</artifactId>
+			<version>${biz.aQute.bnd.bndlib.version}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- WebSocket Dependencies -->
+		<dependency>
+			<groupId>javax.websocket</groupId>
+			<artifactId>javax.websocket-api</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Controls Dependencies -->
+		<dependency>
+			<groupId>com.ge.power.cst</groupId>
+			<artifactId>ControlsCommons</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ge.power.cst</groupId>
+			<artifactId>DatabaseManager</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+		<dependency>
+            <groupId>com.ge.power.cst</groupId>
+            <artifactId>WebSocketServer</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<!-- use 2.5.0 for Java 7 projects -->
+			<version>2.5.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+			<version>3.3.2</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-Version>${project.version}</Bundle-Version>
+						<Import-Package>
+							javax.xml.bind,
+							org.osgi.service.component;version=${import.org.osgi.service.component},
+							org.osgi.service.cm;version=${import.org.osgi.service.cm},
+							org.slf4j; version=${import.org.slf4j}; provider=paxlogging,
+							com.ge.dspmicro.machinegateway.api;version=${import.com.ge.dspmicro.machinegateway.api},
+							com.ge.dspmicro.machinegateway.types;version=${import.com.ge.dspmicro.machinegateway.api},
+							${clover.bundle.import},
+							*
+						</Import-Package>
+						<Export-Package>com.ge.power.cst.actuatoranalytics.*</Export-Package>
+						<_exportcontents></_exportcontents>
+						<Embed-Dependency></Embed-Dependency>
+						<Bundle-ClassPath>.</Bundle-ClassPath>
+						<Service-Component>*</Service-Component>
+					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.plugins.maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${maven.compiler.source.version}</source>
+					<target>${maven.compiler.target.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>${maven.plugins.maven-assembly-plugin.version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>${org.apache.felix.maven-bundle-plugin.version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jarsigner-plugin</artifactId>
+				<version>${maven.plugins.maven-jarsigner-plugin.version}</version>
+			</plugin>
+		</plugins>
+	</build>
+	<parent>
+		<groupId>com.ge.power.cst</groupId>
+		<artifactId>buildparent</artifactId>
+		<version>1</version>
+		<relativePath>../BuildParent/pom.xml</relativePath>
+	</parent>
+</project>

@@ -1,0 +1,28 @@
+Jooq junit testing
+1. DDL SQL script - src\main\resources\db\migration\V*__*.sql
+SCRIPT NODATA TO 'C:\PredixMachine16.3.0\Projects\ActuatorAnalyticsPlant\src\main\resources\db\migration\V1__initial_schema.sql';
+
+2. DML SQL script - src\test\resources\db\migration\V9999__*.sql
+SCRIPT TO 'C:\PredixMachine16.3.0\Projects\ActuatorAnalyticsPlant\src\test\resources\db\migration\V9999__test_data.sql';
+Edit this file -
+	i. add these lines at the top -
+		SET LOCK_MODE 1;     
+		SET REFERENTIAL_INTEGRITY FALSE;    
+	ii. Remove DDL commands
+	iii. add these lines at the bottom -
+		SET REFERENTIAL_INTEGRITY TRUE;
+
+
+
+SELECT CASEWHEN(COUNT(*)-3550<0,0,COUNT(*)-3550) FROM DEVICE_DATA_RAW 
+WHERE SIGNAL_CLASSIFICATION_ID ='HP1_MSV1_HIGH_SERVO_CURRENT_SPREAD_ALERT';
+CASEWHEN(((COUNT(*) - 3550) < 0), 0, (COUNT(*) - 3550))  
+50
+(1 row, 17 ms)
+
+
+
+SELECT * FROM DEVICE_DATA_RAW 
+WHERE SIGNAL_CLASSIFICATION_ID ='HP1_MSV1_HIGH_SERVO_CURRENT_SPREAD_ALERT' 
+ORDER BY TIME_STAMP DESC LIMIT (SELECT CASEWHEN(COUNT(*)-3550<0,0,COUNT(*)-3550) FROM DEVICE_DATA_RAW 
+WHERE SIGNAL_CLASSIFICATION_ID ='HP1_MSV1_HIGH_SERVO_CURRENT_SPREAD_ALERT');
